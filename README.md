@@ -1,3 +1,3 @@
 # ER-mod
 
-![alternative text](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/NoahHakansson/SE-PA1460/main/er-mod.pu)
+![alternative text](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/DingusDungus/ER-mod/main/er-mod.pu)
