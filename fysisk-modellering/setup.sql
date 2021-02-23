@@ -36,4 +36,4 @@ GRANT ALL PRIVILEGES
     TO 'user'@'%'
 ; */
 
-SHOW GRANTS FOR 'user'@'%';
+-- SHOW GRANTS FOR 'user'@'%';
