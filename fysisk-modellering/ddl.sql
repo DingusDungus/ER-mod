@@ -37,7 +37,7 @@ COLLATE utf8_swedish_ci
 CREATE TABLE orders (
     orderID INT NOT NULL DEFAULT 0,
     kundID INT NOT NULL,
-    produkt ID INT NOT NULL,
+    produktID INT NOT NULL,
     antal INT,
 
     PRIMARY KEY (orderID, kundID, produktID),
@@ -89,7 +89,9 @@ COLLATE utf8_swedish_ci
 CREATE TABLE logg (
     loggID INT AUTO_INCREMENT NOT NULL,
     datum DATE,
-    beskrivning VARCHAR(100)
+    beskrivning VARCHAR(100),
+
+    PRIMARY KEY (loggID)
 )
 ENGINE INNODB
 CHARSET utf8
