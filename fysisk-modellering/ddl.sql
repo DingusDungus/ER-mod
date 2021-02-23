@@ -100,10 +100,11 @@ CHARSET utf8
 COLLATE utf8_swedish_ci
 ;
 
--- Index creation
-DROP INDEX IF EXISTS produkter_i ON produkter;
-DROP INDEX IF EXISTS kategorier_i ON kategorier;
-DROP INDEX IF EXISTS bilder_i ON bilder; 
+-- Index creation 
+-- Drop seems to be unnecessary.?
+-- DROP INDEX IF EXISTS produkter_i ON produkter;
+-- DROP INDEX IF EXISTS kategorier_i ON kategorier;
+-- DROP INDEX IF EXISTS bilder_i ON bilder; 
 
 CREATE UNIQUE INDEX produkter_i
     ON produkter(produktID)
