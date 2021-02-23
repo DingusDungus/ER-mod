@@ -7,6 +7,8 @@ DROP TABLE IF EXISTS logg;
 DROP TABLE IF EXISTS produkter;
 DROP TABLE IF EXISTS kundregister;
 
+-- Table creation
+
 CREATE TABLE kundregister (
     kundID INT AUTO_INCREMENT NOT NULL,
     fornamn VARCHAR(20),
@@ -96,4 +98,21 @@ CREATE TABLE logg (
 ENGINE INNODB
 CHARSET utf8
 COLLATE utf8_swedish_ci
+;
+
+-- Index creation
+DROP INDEX IF EXISTS produkter_i ON produkter;
+DROP INDEX IF EXISTS kategorier_i ON kategorier;
+DROP INDEX IF EXISTS bilder_i ON bilder; 
+
+CREATE UNIQUE INDEX produkter_i
+    ON produkter(produktID)
+;
+
+CREATE UNIQUE INDEX kategorier_i
+    ON kategorier(typ, produktID)
+;
+
+CREATE UNIQUE INDEX bilder_i
+    ON bilder(bildobjekt, produktID)
 ;
